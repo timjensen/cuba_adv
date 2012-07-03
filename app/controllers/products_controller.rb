@@ -12,7 +12,11 @@ class ProductsController < ApplicationController
   
   def showprod
     @products = Product.find(:all, :limit => 6, :order => "Random()")
+    if request.xhr?
     clean_simple
+    else
+     render 'showprod'
+    end
   end
   
   def index

@@ -20,7 +20,11 @@ class StaffsController < ApplicationController
   
   def showstaff
     @staffs = Staff.all
-    clean_simple
+    if request.xhr?
+      clean_simple
+    else
+      render 'showstaff'
+    end
   end
   
   def index
@@ -28,7 +32,7 @@ class StaffsController < ApplicationController
     clean_simple
   end
   
-   def edit
+  def edit
     @staff = Staff.find(params[:id])
     @files = Dir.glob("app/assets/images/staffs/*").map{|a| File.basename(a)}
     clean_simple
@@ -47,7 +51,7 @@ class StaffsController < ApplicationController
     end
   end
   
-    def destroy
+  def destroy
     Staff.find(params[:id]).destroy
     @staffs = Staff.all
     flash[:success] = "Staff profile was destroyed."

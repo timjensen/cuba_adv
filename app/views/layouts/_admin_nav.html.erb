@@ -4,6 +4,6 @@
     <li><%= link_to "Edit Products", { :controller => 'products', :action => 'index' }, :remote => true %> </li><li>&nbsp|</li>
     <li><%= link_to "Edit Staff Profiles", { :controller => 'staffs', :action => 'index' }, :remote => true %></li><li>&nbsp|</li>
     <li><%= link_to "Edit Contact Page" , { :controller => 'pages', :action => 'edit', :id => '2' }, :remote => true %></li><li>&nbsp|</li>
-    <li>Logout</li>
+    <li><%= link_to "Logout", logout_path, method: "delete" %></li>
   </ul>
 </center>

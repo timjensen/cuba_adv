@@ -1,4 +1,4 @@
-1341288417
+1341305318
 Application	C:/Sites/cuba_adv/config/application.rb	  class Application 
 ApplicationController	C:/Sites/cuba_adv/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Sites/cuba_adv/app/helpers/application_helper.rb	module ApplicationHelper
@@ -41,15 +41,15 @@ current_user	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def current_user
 current_user=	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def current_user=(user)
 destroy	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	  def destroy
 destroy	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def destroy
-destroy	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	    def destroy
-edit	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def edit
+destroy	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def destroy
 edit	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def edit
-edit	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	   def edit
+edit	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def edit
+edit	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def edit
 home	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def home
 index	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def index
 index	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def index
 new	C:/Sites/cuba_adv/app/controllers/users_controller.rb	  def new
-new	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	 def new
+new	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	  def new
 new	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def new
 new	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def new
 returns http success	C:/Sites/cuba_adv/spec/controllers/users_controller_spec.rb	it "returns http success" do

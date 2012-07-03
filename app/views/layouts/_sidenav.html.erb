@@ -1,9 +1,32 @@
-<br>
-    <li><%= link_to "Home", { :controller => 'pages', :action => 'show', :id => '1' }, :remote => true %></li>
+
+    
+<div id="hasJavaScript" style="display: none">
+  <br>
+  <li><%= link_to "Home", { :controller => 'pages', :action => 'show', :id => '1' }, :remote => true %></li>
+  <center><%= image_tag("wheat.png") %></center>
+  <li><%= link_to "Spotlight On Some Of Our Products", { :controller => 'products', :action => 'showprod' }, :remote => true %></li>
+  <center><%= image_tag("wheat.png") %></center>
+  <li><%= link_to "Meet Our Team", { :controller => 'staffs', :action => 'showstaff' }, :remote => true %></li>
+  <center><%= image_tag("wheat.png") %></center>
+  <li><%= link_to "Contact Us", { :controller => 'pages', :action => 'show', :id => '2' }, :remote => true %></li>
+  <center><%= image_tag("wheat.png") %></center>
+</div>
+
+<div id="noscript">
+    <br>
+    <li><%= link_to "Home",    root_path %></li>
     <center><%= image_tag("wheat.png") %></center>
-    <li><%= link_to "Spotlight On Some Of Our Product", { :controller => 'products', :action => 'showprod' }, :remote => true %></li>
+    <li><%= link_to "Spotlight On Some Of Our Products",    productpage_path %></li>
     <center><%= image_tag("wheat.png") %></center>
-    <li><%= link_to "Meet Our Team", { :controller => 'staffs', :action => 'showstaff' }, :remote => true %></li>
+    <li><%= link_to "Meet Our Team",    staffmembers_path %></li>
     <center><%= image_tag("wheat.png") %></center>
-    <li><%= link_to "Contacts", { :controller => 'pages', :action => 'show', :id => '2' }, :remote => true %></li>
+    <li><%= link_to "Contact Us",    contact_path %></li>
     <center><%= image_tag("wheat.png") %></center>
+</div>
+
+<script type="text/javascript">
+
+    document.getElementById('hasJavaScript').style.display = 'block';
+    document.getElementById('noscript').style.display = 'none';
+
+</script>

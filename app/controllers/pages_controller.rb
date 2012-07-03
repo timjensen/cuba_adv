@@ -19,9 +19,10 @@ class PagesController < ApplicationController
     
   def show
     @page = Page.find(params[:id])
-  
-    respond_to do |format|
-        format.js {}
+    if request.xhr?
+      clean_simple
+    else
+      render 'showprod'
     end
   end
       

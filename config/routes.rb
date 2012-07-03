@@ -1,21 +1,24 @@
 CubaAdv::Application.routes.draw do
   
-  get "sessions/new"
-
-  get "users/new"
-
   root :to => 'pages#home', :id => '1'
   match 'admin', :to => 'pages#adminhome', :id => '1'
+  match 'productpage', :to => 'products#showprod'
+  match 'staffmembers', :to => 'staffs#showstaff'
+  match 'contact', :to => 'pages#show', :id => '2'
+  match 'login', :to => 'sessions#new'
+  match 'logout', :to => 'sessions#destroy', via: :delete
   get 'products/showprod'
   get 'staffs/showstaff'
+  resources :sessions, only: [:new, :create, :destroy]
   resources :pages
+  resources :staffs
   resources :products do
     member do 
     put 'specup'
     put 'specdown'
   end
   end
-  resources :staffs
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
