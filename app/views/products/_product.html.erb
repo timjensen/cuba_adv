@@ -1,0 +1,15 @@
+<tr>
+  <td width="150px"><%= product.name %></td>
+  <td width="200px"><%= product.descrip[0..30] %>...</td>
+  <td width="75px">$<%= product.price %></td>
+  <td width="75px">$<%= product.sprice %></td>
+  <td width="55px"><%= link_to "Edit Product", { :controller => 'products', :action => 'edit', :id => product.id }, :remote => true %></td>
+  <td width="125px">
+    <% if product.spec == ""%>
+      <%= link_to "Put On Promotion", specup_product_path(product), :method => :put, :remote => true  %>
+    <% else %>
+      <%= link_to "Take Product Off Promotion", specdown_product_path(product), :method => :put, :remote => true  %>
+    <% end %>
+  </td>
+  <td width="75px"><%= link_to "Delete Product", product, method: :delete, confirm: "Are you sure you wish to delete this product?" , :remote => true %></td>
+</tr>

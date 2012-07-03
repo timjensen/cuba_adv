@@ -1,0 +1,11 @@
+<div id="contain">
+<h1><%= @page.title %></h1>
+<p><%= @page.content.html_safe %></p>
+
+<% if @page.title == "Contact Us" %>
+<br><center>
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.nz/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=72+Cuba+Street,+Palmerston+North,+Manawatu-Wanganui&amp;aq=1&amp;sll=-41.244772,172.617188&amp;sspn=34.699957,86.572266&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=72+Cuba+St,+Palmerston+North,+4410,+Manawatu-Wanganui&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+<br /><small><a href="http://maps.google.co.nz/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=72+Cuba+Street,+Palmerston+North,+Manawatu-Wanganui&amp;aq=1&amp;sll=-41.244772,172.617188&amp;sspn=34.699957,86.572266&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=72+Cuba+St,+Palmerston+North,+4410,+Manawatu-Wanganui&amp;t=m&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:center">View Larger Map</a></small>
+</center><br><br>
+<% end %>
+</div>

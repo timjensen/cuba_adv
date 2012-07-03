@@ -1,0 +1,10 @@
+<h1><%= @page.admintitle %></h1>
+<div id="try">
+  <div class="span9"><%= form_for(@page) do |f| %>
+    <%= f.text_area :content %><br><br>
+    <center>
+      <%= f.submit "Update Page"%>
+    </center>
+    <% end %>
+  </div>
+</div>

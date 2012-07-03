@@ -1,0 +1,74 @@
+1341288080
+Application	C:/Sites/cuba_adv/config/application.rb	  class Application 
+ApplicationController	C:/Sites/cuba_adv/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	C:/Sites/cuba_adv/app/helpers/application_helper.rb	module ApplicationHelper
+BrowsingTest	C:/Sites/cuba_adv/test/performance/browsing_test.rb	class BrowsingTest 
+CreatePages	C:/Sites/cuba_adv/db/migrate/20120625053059_create_pages.rb	class CreatePages 
+CreateProducts	C:/Sites/cuba_adv/db/migrate/20120625053312_create_products.rb	class CreateProducts 
+CreateStaffs	C:/Sites/cuba_adv/db/migrate/20120625053552_create_staffs.rb	class CreateStaffs 
+CreateUsers	C:/Sites/cuba_adv/db/migrate/20120703015900_create_users.rb	class CreateUsers 
+CubaAdv	C:/Sites/cuba_adv/config/application.rb	module CubaAdv
+GET 'new'	C:/Sites/cuba_adv/spec/controllers/users_controller_spec.rb	describe "GET 'new'" do
+GET 'new'	C:/Sites/cuba_adv/spec/controllers/sessions_controller_spec.rb	describe "GET 'new'" do
+Page	C:/Sites/cuba_adv/app/models/page.rb	class Page 
+PageTest	C:/Sites/cuba_adv/test/unit/page_test.rb	class PageTest 
+PagesController	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	class PagesController 
+Product	C:/Sites/cuba_adv/app/models/product.rb	class Product 
+ProductTest	C:/Sites/cuba_adv/test/unit/product_test.rb	class ProductTest 
+ProductsController	C:/Sites/cuba_adv/app/controllers/products_controller.rb	class ProductsController 
+SessionsController	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	class SessionsController 
+SessionsHelper	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	module SessionsHelper
+Staff	C:/Sites/cuba_adv/app/models/staff.rb	class Staff 
+StaffTest	C:/Sites/cuba_adv/test/unit/staff_test.rb	class StaffTest 
+StaffsController	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	class StaffsController 
+StaffsHelper	C:/Sites/cuba_adv/app/helpers/staffs_helper.rb	module StaffsHelper
+TestCase	C:/Sites/cuba_adv/test/test_helper.rb	class ActiveSupport::TestCase
+User	C:/Sites/cuba_adv/app/models/user.rb	class User 
+UsersController	C:/Sites/cuba_adv/app/controllers/users_controller.rb	class UsersController 
+adminhome	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def adminhome
+animate	C:/Sites/cuba_adv/app/assets/javascripts/back_end.js	function animate(lastTick, timeLeft, closingId, openingId)
+change	C:/Sites/cuba_adv/db/migrate/20120625053059_create_pages.rb	  def change
+change	C:/Sites/cuba_adv/db/migrate/20120625053312_create_products.rb	  def change
+change	C:/Sites/cuba_adv/db/migrate/20120625053552_create_staffs.rb	  def change
+change	C:/Sites/cuba_adv/db/migrate/20120703015900_create_users.rb	  def change
+clean_staff	C:/Sites/cuba_adv/app/helpers/staffs_helper.rb	  def clean_staff
+concats two strings with spaces	C:/Sites/cuba_adv/spec/helpers/users_helper_spec.rb	it "concats two strings with spaces" do
+concats two strings with spaces	C:/Sites/cuba_adv/spec/helpers/sessions_helper_spec.rb	it "concats two strings with spaces" do
+create	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	  def create
+create	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def create
+create	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def create
+current_user	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def current_user
+current_user=	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def current_user=(user)
+destroy	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	  def destroy
+destroy	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def destroy
+destroy	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	    def destroy
+edit	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def edit
+edit	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def edit
+edit	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	   def edit
+home	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def home
+index	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def index
+index	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def index
+new	C:/Sites/cuba_adv/app/controllers/users_controller.rb	  def new
+new	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	 def new
+new	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def new
+new	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def new
+returns http success	C:/Sites/cuba_adv/spec/controllers/users_controller_spec.rb	it "returns http success" do
+returns http success	C:/Sites/cuba_adv/spec/controllers/sessions_controller_spec.rb	it "returns http success" do
+runAccordion	C:/Sites/cuba_adv/app/assets/javascripts/back_end.js	function runAccordion(index)
+sessions/new.html.erb	C:/Sites/cuba_adv/spec/views/sessions/new.html.erb_spec.rb	describe "sessions/new.html.erb" do
+set_groups	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def set_groups
+show	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def show
+showprod	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def showprod
+showstaff	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def showstaff
+sign_in	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	   def sign_in(user)
+sign_out	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def sign_out
+signed_in?	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def signed_in?
+specdown	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def specdown
+specup	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def specup
+string concat	C:/Sites/cuba_adv/spec/helpers/users_helper_spec.rb	describe "string concat" do
+string concat	C:/Sites/cuba_adv/spec/helpers/sessions_helper_spec.rb	describe "string concat" do
+test_homepage	C:/Sites/cuba_adv/test/performance/browsing_test.rb	  def test_homepage
+update	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def update
+update	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def update
+users/new.html.erb	C:/Sites/cuba_adv/spec/views/users/new.html.erb_spec.rb	describe "users/new.html.erb" do
+vertAlign	C:/Sites/cuba_adv/app/assets/javascripts/front_end.js	function vertAlign(pImg)

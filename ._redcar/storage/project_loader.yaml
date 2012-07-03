@@ -1,0 +1,7 @@
+--- 
+open_files: 
+  - app/controllers/products_controller.rb
+  - app/controllers/staffs_controller.rb
+  - app/views/products/_product.html.erb
+  - config/routes.rb
+  - db/schema.rb

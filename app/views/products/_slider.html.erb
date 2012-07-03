@@ -1,0 +1,10 @@
+<div onclick="runAccordion(<%= id %>);">
+    <div class="AccordionTitle" onselectstart="return false;">
+      <%= prod %>
+    </div>
+  </div>
+  <div id="Accordion<%= id %>Content" class="AccordionContent">
+    <table>
+    <%= render type %>
+    </table>
+</div>

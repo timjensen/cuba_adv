@@ -1,0 +1,11 @@
+<div id="roundthatshit">
+  <table>
+    <tr>
+      <td width="120px"><%= staff.name %></td>
+      <td width="140px"><center><%= staff.title %></center></td>
+      <td width="350px"><%= staff.bio[0..30] %>...</td>
+      <td width="75px"><%= link_to "Edit Profile", { :controller => 'staffs', :action => 'edit', :id => staff.id }, :remote => true %></td> 
+      <td width="75px"><%= link_to "Delete Product", staff, method: :delete, confirm: "Are you sure you wish to delete this staff profile?" , :remote => true %></td>
+    </tr>
+</table>
+</div><br>
