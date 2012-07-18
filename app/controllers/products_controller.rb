@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   
+  before_filter :signed_in_user, only: [:edit, :update, :index, :new, :destroy]
     
   def set_groups
     @spec = Product.where("spec != ''").first

@@ -5,8 +5,8 @@ during my Bachelor of Information and Communication Technologies(Applied).
 
 Improved so far:
   - Focus on DRY
-  - AJAX implimented
+  - AJAX implimented (Front end will work as default if Javascripting is disabled)
   
 TODO
   - Add caching
-  - Improve image upload usind paperclip and amazon s3 cloud
+  - Improve image upload using paperclip and amazon s3 cloud

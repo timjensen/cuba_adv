@@ -12,4 +12,8 @@ module ProductsHelper
       end
   end
   
+  def spec_it
+    @spec = Product.where("spec != ''").first
+  end
+  
 end

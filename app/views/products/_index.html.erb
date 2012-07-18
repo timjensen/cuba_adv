@@ -6,7 +6,13 @@
   </ul>
 </center><br>
 <center>
-Spec Display To go here
+<% if spec_it.nil? %>
+  <label>No special currently set</label>
+  <% elsif spec_it.spec.to_date > Date.today %>
+  <label> There is currently an active special set <%= @spec.name %></label>
+  <% elsif spec_it.spec.to_date < Date.today %>
+  <label> There is currently an expired special set <%= @spec.name %></label>
+  <% end %>
 </center><br>
 
 <% flash.each do |key, value| %>

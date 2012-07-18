@@ -12,6 +12,20 @@
 	src: url(/assets/bakery-script.ttf);
 }
 /* main */
+#gotahaveit {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  background-color: #E85A5A;
+  border: 2px solid #E91B1B;
+  border-bottom-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+#gotahaveit.p {
+  color: #E91B1B;
+}
 #try {
   width: 755px;
   margin: auto;

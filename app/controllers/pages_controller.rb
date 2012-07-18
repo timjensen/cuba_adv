@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
   
+  before_filter :signed_in_user, only: [:edit, :update, :adminhome ]
+  
   def home
     @page = Page.find(params[:id])
   end
