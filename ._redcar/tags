@@ -1,4 +1,5 @@
-1342573650
+1342578365
+AddRemIndexToUsers	C:/Sites/cuba_adv/db/migrate/20120718022157_add_rem_index_to_users.rb	class AddRemIndexToUsers 
 Application	C:/Sites/cuba_adv/config/application.rb	  class Application 
 ApplicationController	C:/Sites/cuba_adv/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Sites/cuba_adv/app/helpers/application_helper.rb	module ApplicationHelper
@@ -32,6 +33,7 @@ change	C:/Sites/cuba_adv/db/migrate/20120625053059_create_pages.rb	  def change
 change	C:/Sites/cuba_adv/db/migrate/20120625053312_create_products.rb	  def change
 change	C:/Sites/cuba_adv/db/migrate/20120625053552_create_staffs.rb	  def change
 change	C:/Sites/cuba_adv/db/migrate/20120703015900_create_users.rb	  def change
+change	C:/Sites/cuba_adv/db/migrate/20120718022157_add_rem_index_to_users.rb	  def change
 clean_product	C:/Sites/cuba_adv/app/helpers/products_helper.rb	  def clean_product
 clean_simple	C:/Sites/cuba_adv/app/helpers/products_helper.rb	  def clean_simple
 clean_staff	C:/Sites/cuba_adv/app/helpers/staffs_helper.rb	  def clean_staff
@@ -40,6 +42,7 @@ concats two strings with spaces	C:/Sites/cuba_adv/spec/helpers/sessions_helper_s
 create	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def create
 create	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def create
 create	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	  def create
+create_remember_token	C:/Sites/cuba_adv/app/models/user.rb	  def create_remember_token
 current_user	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def current_user
 current_user=	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def current_user=(user)
 destroy	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def destroy

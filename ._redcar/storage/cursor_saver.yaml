@@ -111,9 +111,6 @@ cursor_positions:
   - :path: db/migrate/20120625053312_create_products.rb
     :cursor_offset: 202
     :timestamp: 2012-06-25 17:38:45.776000 +12:00
-  - :path: db/migrate/20120703015900_create_users.rb
-    :cursor_offset: 0
-    :timestamp: 2012-07-03 13:59:00.985000 +12:00
   - :path: app/helpers/pages.rb
     :cursor_offset: 45
     :timestamp: 2012-06-30 16:49:44.458000 +12:00
@@ -277,4 +274,7 @@ cursor_positions:
   - :path: app/views/layouts/_front_end_bottom.html.erb
     :cursor_offset: 74
     :timestamp: 2012-07-03 16:41:47.937000 +12:00
+  - :path: db/migrate/20120703015900_create_users.rb
+    :cursor_offset: 0
+    :timestamp: 2012-07-03 13:59:00.985000 +12:00
 files_to_retain: 0
