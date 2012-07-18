@@ -20,6 +20,7 @@ group :assets do
   # gem 'therubyracer', :platform => :ruby
 group :production do
   gem 'pg', '0.12.2'
+  gem 'bcrypt-ruby', '~> 3.0.1'
 end
   gem 'uglifier', '>= 1.0.3'
 end
