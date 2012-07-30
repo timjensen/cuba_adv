@@ -8,6 +8,11 @@ if defined?(Bundler)
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
 end
+AWS::S3::DEFAULT_HOST.replace "s3-ap-southeast-1.amazonaws.com"
+AWS::S3::Base.establish_connection!(
+      :access_key_id     => 'AKIAI4JGWTWL5NKPYFIQ',
+      :secret_access_key => '5fVs3bewxq6KlF+BSK/nHss/0rSMh1pNl+SrTsvy',
+      :server => 's3-ap-southeast-1.amazonaws.com'   )
 
 module CubaAdv
   class Application < Rails::Application

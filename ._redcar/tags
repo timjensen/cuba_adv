@@ -1,4 +1,4 @@
-1342578365
+1343691335
 AddRemIndexToUsers	C:/Sites/cuba_adv/db/migrate/20120718022157_add_rem_index_to_users.rb	class AddRemIndexToUsers 
 Application	C:/Sites/cuba_adv/config/application.rb	  class Application 
 ApplicationController	C:/Sites/cuba_adv/app/controllers/application_controller.rb	class ApplicationController 
@@ -25,6 +25,8 @@ StaffTest	C:/Sites/cuba_adv/test/unit/staff_test.rb	class StaffTest
 StaffsController	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	class StaffsController 
 StaffsHelper	C:/Sites/cuba_adv/app/helpers/staffs_helper.rb	module StaffsHelper
 TestCase	C:/Sites/cuba_adv/test/test_helper.rb	class ActiveSupport::TestCase
+Upload	C:/Sites/cuba_adv/app/models/upload.rb	class Upload 
+UploadsController	C:/Sites/cuba_adv/app/controllers/uploads_controller.rb	class UploadsController 
 User	C:/Sites/cuba_adv/app/models/user.rb	class User 
 UsersController	C:/Sites/cuba_adv/app/controllers/users_controller.rb	class UsersController 
 adminhome	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def adminhome
@@ -40,27 +42,34 @@ clean_staff	C:/Sites/cuba_adv/app/helpers/staffs_helper.rb	  def clean_staff
 concats two strings with spaces	C:/Sites/cuba_adv/spec/helpers/users_helper_spec.rb	it "concats two strings with spaces" do
 concats two strings with spaces	C:/Sites/cuba_adv/spec/helpers/sessions_helper_spec.rb	it "concats two strings with spaces" do
 create	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def create
-create	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def create
 create	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	  def create
+create	C:/Sites/cuba_adv/app/controllers/uploads_controller.rb	  def create
+create	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def create
 create_remember_token	C:/Sites/cuba_adv/app/models/user.rb	  def create_remember_token
 current_user	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def current_user
 current_user=	C:/Sites/cuba_adv/app/helpers/sessions_helper.rb	  def current_user=(user)
 destroy	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def destroy
-destroy	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def destroy
 destroy	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	  def destroy
+destroy	C:/Sites/cuba_adv/app/controllers/uploads_controller.rb		def destroy
+destroy	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def destroy
 edit	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def edit
-edit	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def edit
 edit	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def edit
+edit	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def edit
+file	C:/Sites/cuba_adv/app/models/upload.rb	  attr_accessor :file
 home	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def home
 index	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def index
 index	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def index
+initialise	C:/Sites/cuba_adv/app/models/upload.rb	  def initialise(attributes = {})
 new	C:/Sites/cuba_adv/app/controllers/users_controller.rb	  def new
 new	C:/Sites/cuba_adv/app/controllers/staffs_controller.rb	  def new
-new	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def new
 new	C:/Sites/cuba_adv/app/controllers/sessions_controller.rb	  def new
+new	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def new
+persisted?	C:/Sites/cuba_adv/app/models/upload.rb	  def persisted?
+products	C:/Sites/cuba_adv/app/controllers/uploads_controller.rb	  def products
 returns http success	C:/Sites/cuba_adv/spec/controllers/users_controller_spec.rb	it "returns http success" do
 returns http success	C:/Sites/cuba_adv/spec/controllers/sessions_controller_spec.rb	it "returns http success" do
 runAccordion	C:/Sites/cuba_adv/app/assets/javascripts/back_end.js	function runAccordion(index)
+sanitize_filename	C:/Sites/cuba_adv/app/controllers/uploads_controller.rb	  def sanitize_filename(file_name)
 sessions/new.html.erb	C:/Sites/cuba_adv/spec/views/sessions/new.html.erb_spec.rb	describe "sessions/new.html.erb" do
 set_groups	C:/Sites/cuba_adv/app/controllers/products_controller.rb	  def set_groups
 show	C:/Sites/cuba_adv/app/controllers/pages_controller.rb	  def show

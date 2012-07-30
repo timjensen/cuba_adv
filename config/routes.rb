@@ -9,9 +9,11 @@ CubaAdv::Application.routes.draw do
   match 'logout', :to => 'sessions#destroy', via: :delete
   get 'products/showprod'
   get 'staffs/showstaff'
+  match 'prod/upload', :to => 'uploads#products'
   resources :sessions, only: [:new, :create, :destroy]
   resources :pages
   resources :staffs
+  resources :uploads
   resources :products do
     member do 
     put 'specup'

@@ -1,0 +1,8 @@
+<% if spec_it.nil? %>
+  <br><br>New Specials Coming Soon!!
+  <% elsif spec_it.spec.to_date > Date.today %>
+  <br><br>At Cuba StreetBakehouse This Week<br>
+  Delicious <%= @spec.name %> Only $ <%= @spec.sprice %> 
+  <% elsif spec_it.spec.to_date < Date.today %>
+  <br><br>New Specials Coming Soon!!
+  <% end %>

@@ -1,0 +1,20 @@
+<div id="uploaddiv">
+<div class="row">
+  <div class="span5 ">
+<%= form_tag( {:controller => "uploads", :action => "products"}, :method => 'post',  :multipart => true )  do %>
+	 
+	   <div>
+	     <label>Image</label>
+	   </div>
+	   <div style="width: 400px;" >
+	     <%= file_field 'upload', 'datafile'  %>
+	   </div>
+	 
+	 <div>
+	   <%= submit_tag( "Upload image" )%>
+	 </div>
+	 
+	<% end  %>
+ </div>
+</div>
+</div>

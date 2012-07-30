@@ -1,14 +1,3 @@
 --- 
 open_files: 
-  - app/assets/stylesheets/back_end.css.scss
-  - app/views/products/_product.html.erb
-  - app/views/products/_index.html.erb
-  - app/controllers/products_controller.rb
-  - app/controllers/pages_controller.rb
-  - app/controllers/sessions_controller.rb
-  - app/helpers/sessions_helper.rb
-  - config/routes.rb
-  - Gemfile
-  - app/views/products/_slider.html.erb
-  - app/views/staffs/_staff.html.erb
-  - app/views/sessions/new.html.erb
+  - app/views/layouts/_front_end_top.html.erb

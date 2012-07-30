@@ -27,7 +27,9 @@ class ProductsController < ApplicationController
   
   def edit
     @product = Product.find(params[:id])
-    @files = Dir.glob("app/assets/images/products/*").map{|a| File.basename(a)}
+    #@files = Dir.glob("app/assets/images/products/*").map{|a| File.basename(a)}
+    @objs = AWS::S3::Bucket.find("cubabakehouse").objects
+    @files = @objs.each{ |e| AWS::S3::S3Object.value(e,"cubabakehouse") }
     clean_simple
   end
   
@@ -36,7 +38,7 @@ class ProductsController < ApplicationController
     if @product.update_attributes(params[:product])
       set_groups
       flash[:success] = "Product Updated Successfully"
-      clean_product
+      clean_product 
     else
       set_groups
       clean_product
